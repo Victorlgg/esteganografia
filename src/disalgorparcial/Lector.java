@@ -37,6 +37,13 @@ public class Lector {
                     int g = c.getGreen();
                     int b = c.getBlue();
                     if (!fintexto) {
+                        //Numeros
+                        if ( r==48   ) {  texto+="0"; } if ( r==49   ) {  texto+="1"; }
+                        if ( r==50   ) {  texto+="2"; } if ( r==51   ) {  texto+="3"; }
+                        if ( r==52   ) {  texto+="4"; } if ( r==53   ) {  texto+="5"; }
+                        if ( r==54   ) {  texto+="6"; } if ( r==55   ) {  texto+="7"; }
+                        if ( r==56   ) {  texto+="8"; } if ( r==57   ) {  texto+="9"; }
+                        //Letras
                         if ( r==97   ) {  texto+="a"; } if ( r==98   ) {  texto+="b"; }
                         if ( r==99   ) {  texto+="c"; } if ( r==100  ) {  texto+="d"; }
                         if ( r==101  ) {  texto+="e"; } if ( r==102  ) {  texto+="f"; }

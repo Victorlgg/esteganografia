@@ -46,6 +46,10 @@ public class DisAlgorParcial {
             // String Mensaje="Este mensaje es guardado";
             dato = bf.readLine();
             }//Fin IF
+            if(dato.charAt(dato.length()-1)!='.'){
+            dato+=".";
+            }
+            
             char[] arrayLetras = dato.toCharArray();
             //**************************************************************
 
@@ -98,9 +102,13 @@ public class DisAlgorParcial {
                         if (arrayLetras[i] == ' ') {r = 32;}
                         if (arrayLetras[i] == '.') {
                             r = 0;  g = 255; b = 0;
+
                         }
                         x++;
+                        
                     }
+                  
+                    
                     Color gColor = new Color(r, g, b);
                     imagenNueva.setRGB(i, j, gColor.getRGB());
                 }

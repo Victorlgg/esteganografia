@@ -65,12 +65,14 @@ public class Lector {
                             texto += ".";
                             fintexto = true;
                             System.out.println(texto);
-                        }
-                    }
-                }
-            }
+                        }//End if punto
+                    }//End if !fintexto
+                }//end ciclo ancho
+                rutaNueva.append(texto);
+                texto="";
+            }//end ciclo alto
 
-            rutaNueva.append(texto);
+//            rutaNueva.append(texto);
             rutaNueva.close();
         } catch (IOException e) {
             //TODO Auto-generated catch block
